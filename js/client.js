@@ -2,8 +2,7 @@ const API_ADDRESS = 'https://sudokus-solver.herokuapp.com/api/solve';
 
 const inputs = document.querySelectorAll('input');
 const solveButton = document.querySelector('#solveButton');
-
-console.log(inputs);
+const clearButton = document.querySelector('#clearButton');
 
 function readSudoku() {
 	const sudoku = [];
@@ -33,6 +32,14 @@ function writeSudoku(sudoku) {
 	}
 }
 
+function clearSudoku() {
+	for (var y = 0; y < 9; y++) {
+		for (var x = 0; x < 9; x++) {
+			inputs.item(y * 9 + x).value = '';
+		}
+	}
+}
+
 function solveSudoku() {
 	const sudoku = readSudoku();
 
@@ -43,8 +50,16 @@ function solveSudoku() {
 		},
 		body: JSON.stringify(sudoku),
 	})
-	.then(resp => resp.json())
-	.then(data => writeSudoku(data));
+		.then(resp => resp.json())
+		.then(data => {
+			if (data.error == null) {
+				writeSudoku(data);
+			} else {
+				alert("That doesnt seem possible! Try again");
+				clearSudoku();
+			}
+		});
 }
 
 solveButton.addEventListener('click', solveSudoku);
+clearButton.addEventListener('click', clearSudoku);
