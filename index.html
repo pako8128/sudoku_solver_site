@@ -29,6 +29,17 @@
 		}
 	</style>
 
+	<script>
+		const regex = RegExp('^[1-9]$');
+		function validate(event, elem) {
+			event.preventDefault();
+			if (event.charCode >= 49 && event.charCode <= 57) {
+				elem.value = event.charCode - 48;
+			} else {
+				elem.value = '';
+			}
+		}
+	</script>
 </head>
 
 <body>
@@ -56,107 +67,107 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-							</tr>
-						</tbody>
-						<tbody>
-							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-							</tr>
-							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-							</tr>
-							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 						</tbody>
 						<tbody>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 							<tr>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
-								<td><input type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+							</tr>
+							<tr>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
+								<td><input onkeypress="validate(event,this)" type="text" size="1"></td>
 							</tr>
 						</tbody>
 					</table>
